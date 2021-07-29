@@ -116,44 +116,44 @@ const { products, addItem } = useContext(ProductContext);
 
 **STEP 6 - Providing data with CartContext**
 
-- Let's go ahead and bring our newly created `CartContext` into our `App.js` and wrap all of our components inside of our `CartContext.Provider`. Make sure our `ProductContext.Provider` is still the root provider.
+- [X] Let's go ahead and bring our newly created `CartContext` into our `App.js` and wrap all of our components inside of our `CartContext.Provider`. Make sure our `ProductContext.Provider` is still the root provider.
 
-- Now pass a value prop to our `CartContext.Provider`, this value prop is going to contain our `cart` state.
+- [X] Now pass a value prop to our `CartContext.Provider`, this value prop is going to contain our `cart` state.
 
-- Now that we're providing our cart data, we can start to refactor our `Navigation` and `ShoppingCart` components.
+- [X] Now that we're providing our cart data, we can start to refactor our `Navigation` and `ShoppingCart` components.
 
-- Let's start with our `ShoppingCart` component first. Go ahead and refactor the `ShoppingCart` route to no longer use render props. This will throw us an error, but we'll be able to resolve it quickly.
+- [X] Let's start with our `ShoppingCart` component first. Go ahead and refactor the `ShoppingCart` route to no longer use render props. This will throw us an error, but we'll be able to resolve it quickly.
 
-- While were at it let's go ahead and remove the props from our navigation as well.
+- [X] While were at it let's go ahead and remove the props from our navigation as well.
 
 **STEP 7 - The final stretch**
 
-- Our cart data is now being provided to us from our `CartContext` time to consume it!
+- [X] Our cart data is now being provided to us from our `CartContext` time to consume it!
 
-- First, let's head to our `ShoppingCart` component and import the `useContext` hook and our `CartContext`.
+- [X] First, let's head to our `ShoppingCart` component and import the `useContext` hook and our `CartContext`.
 
-- Now in the component, pass `CartContext` to the `useContext` hook and assign it to a variable named cart.
+- [X] Now in the component, pass `CartContext` to the `useContext` hook and assign it to a variable named cart.
 
-- Inside of our component we now need to remove all instances of props.
+- [X] Inside of our component we now need to remove all instances of props.
 
-  - Remove the `props` parameter
-  - Remove the `props` portion in our `getCartTotal` function
-  - Remove `props` when we're mapping over our cart
+  - [X] Remove the `props` parameter
+  - [X] Remove the `props` portion in our `getCartTotal` function
+  - [X] Remove `props` when we're mapping over our cart
 
-- Time to do the same thing for our `Navigation` component.
-  - First import the `useContext` hook and our `CartContext`
-  - Next, pass our `CartContext` to the `useContext` hook and assign it to a variable named cart.
-  - Lastly we need to remove all instances of `props`
-    - Remove `props` from our parameters
-    - Remove `props` from our cart length
+- [X] Time to do the same thing for our `Navigation` component.
+  - [X] First import the `useContext` hook and our `CartContext`
+  - [X] Next, pass our `CartContext` to the `useContext` hook and assign it to a variable named cart.
+  - [X] Lastly we need to remove all instances of `props`
+    - [X] Remove `props` from our parameters
+    - [X] Remove `props` from our cart length
 
 We have now successfully converted our application into using `Context API` 🔥
 
 **MVP Requirements**
 
-- Create a `ProductContext` and a `CartContext`
-- Use the Provider Component from `ProductContext` and `CartContext` to provide data to child components
-- Consume data using the `useContext` hook from `ProductContext` and `CartContext`
+- [X] Create a `ProductContext` and a `CartContext`
+- [X] Use the Provider Component from `ProductContext` and `CartContext` to provide data to child components
+- [X] Consume data using the `useContext` hook from `ProductContext` and `CartContext`
 
 ### Task 3: Stretch Problems
 
